@@ -4,13 +4,14 @@ public class RotateImageMatrix {
         int  k=matrix.length-1;
        int [][] swapMatrix = new int [matrix.length][matrix.length]; 
        int fix = matrix.length -1;
-       
+       //here we swap the rows  
        for (int i = 0; i < swapMatrix.length; i++) {
            for (int j = swapMatrix.length-1; j >=0; j--) {
                swapMatrix[i][fix-j]= matrix[k][fix-j];                
            }
            k--;
        }
+		//after then we take transope of it.
 
        for (int i = 0; i < swapMatrix.length; i++) {
            for (int j = 0; j < swapMatrix.length; j++) {                
